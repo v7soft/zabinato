@@ -1,0 +1,2 @@
+#!/bin/bash
+echo -n '<?xml version="1.0"?><methodCall><methodName>getValuesList</methodName><params><param><value><array><data><value><string>unit.compilation_status_set</string></value><value><string>unit.module.0.status</string></value></data></array></value></param><param><value><string></string></value></param></params></methodCall>' | curl -s  http://192.168.3.2/RPC2/CATER -d @-| grep "<value><string>0x"|sed 's/<value><string>0x//'|while read code;do echo -n ${code:0:1};done

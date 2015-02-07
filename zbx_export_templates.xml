@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>2.0</version>
+    <date>2015-02-07T14:20:53Z</date>
+    <groups>
+        <group>
+            <name>IPTV</name>
+        </group>
+        <group>
+            <name>ТВК телевидение</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Luminato</template>
+            <name>Luminato</name>
+            <description>Доступность веб-интерфейса luminato</description>
+            <groups>
+                <group>
+                    <name>IPTV</name>
+                </group>
+                <group>
+                    <name>ТВК телевидение</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Luminato UI</name>
+                </application>
+            </applications>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+    </templates>
+</zabbix_export>
